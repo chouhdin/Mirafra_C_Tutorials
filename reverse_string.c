@@ -6,21 +6,9 @@
 int main()
 {
     char str[20] = "DINESH";
-    int len = 0, j = 0;
-
-    //printf("Enter a string :");
-    //fgets(str, 20, stdin);
-    printf("\n %d \n", strlen(str));
-    // len = strlen(str) - 1;
-
-    for (int i = strlen(str) - 1; i >= (strlen(str)/2); i--)
+    for (int i = strlen(str) - 1; i >= 0; i--)
     {
-        str[j] = str[i];
-        j++;
-        //printf("%c", str[j]);
+        printf("%c", str[i]);
     }
-    // puts(str);
-    printf("\nThe Reversed string is : %s", str);
-
     return 0;
 }
